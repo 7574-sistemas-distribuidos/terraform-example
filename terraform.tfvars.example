@@ -1,0 +1,4 @@
+credentials_path = "<FILE_PATH. ie: .credentials.json>"
+project_id = "<PROJECT_ID. ie: my-test-project>"
+bucket_name = "<BUCKET_NAME. ie: my-test-bucket>"
+

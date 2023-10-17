@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  project     = "experimental-tests-123"
+  project     = var.project_id
   region      = "us-central1"
   credentials = file(var.credentials_path)
 }
@@ -18,6 +18,7 @@ data "google_client_openid_userinfo" "provider_identity" {
 
 module "storage" {
   source = "./modules/storage"
+  bucket_name = var.bucket_name
 }
 
 module "boundaries" {
