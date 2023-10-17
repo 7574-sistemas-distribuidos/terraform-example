@@ -47,6 +47,6 @@ terraform apply -target=module.boundaries -target=module.controllers
 ```
 1. Eliminar todos los recursos creados:
 ```
-terraform destroy
+terraform destroy -target=module.boundaries -target=module.controllers -target=module.networking -target=module.web_servers
 ```
 
